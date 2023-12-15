@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_menu_items",
+  "info": {
+    "displayName": "item",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
