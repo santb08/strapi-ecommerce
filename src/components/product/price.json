@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_product_prices",
+  "info": {
+    "displayName": "Price",
+    "icon": "priceTag"
+  },
+  "options": {},
+  "attributes": {
+    "quantity": {
+      "type": "integer"
+    },
+    "value": {
+      "type": "decimal"
+    }
+  }
+}
