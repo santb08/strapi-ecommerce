@@ -697,6 +697,7 @@ export interface ApiCollectionCollection extends Schema.CollectionType {
       'api::product.product'
     >;
     slug: Attribute.String;
+    featuredImage: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
