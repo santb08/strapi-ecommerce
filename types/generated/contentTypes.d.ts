@@ -696,7 +696,6 @@ export interface ApiCollectionCollection extends Schema.CollectionType {
       'oneToMany',
       'api::product.product'
     >;
-    slug: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -743,23 +742,17 @@ export interface ApiProductProduct extends Schema.CollectionType {
   info: {
     singularName: 'product';
     pluralName: 'products';
-    displayName: 'Product';
-    description: '';
+    displayName: 'product';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     title: Attribute.String;
-    description: Attribute.Text;
+    description: Attribute.String;
+    price: Attribute.Float;
     images: Attribute.Media;
     featuredImage: Attribute.Media;
-    priceDetails: Attribute.Component<'product.price', true> &
-      Attribute.Required &
-      Attribute.SetMinMax<{
-        min: 1;
-        max: 5;
-      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
